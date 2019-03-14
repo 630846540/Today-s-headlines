@@ -1,0 +1,33 @@
+@import '@/qunar/reset.scss';
+
+html, body, #root, .box {
+  @include rect(100%, 100%);
+  @include overflow();
+}
+.content {
+  @include rect(100%,100%);
+  .video {
+    @include rect(100%, auto);
+    position: relative;
+    h3 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      @include color(#fff);
+      margin-top: 0.1rem;
+      margin-left: 0.2rem;
+    }
+
+    img {
+      @include rect(95%, 2rem);
+      @include margin(0.1rem 0.2rem 0 0.1rem);
+    }
+
+    span {
+      @include font-size(0.1rem);
+      @include color(#999);
+      margin-left: 0.1rem;
+    }
+  }
+}

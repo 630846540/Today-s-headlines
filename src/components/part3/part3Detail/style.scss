@@ -1,0 +1,83 @@
+@import '@/qunar/reset.scss';
+
+.box{
+  @include rect(100%,100%);
+  h1{
+    @include font-size(0.2rem);
+    margin-left: 0.1rem;
+    margin-right: 0.1rem;
+    margin-bottom: 0.15rem;
+    line-height: 0.34rem;
+    @include color(#222);
+    font-weight: 500;
+  }
+  .huan{
+    float: left;
+    margin-left: 0.1rem;
+    margin-bottom: 0.1rem;
+    img{
+      @include rect(0.24rem,0.24rem);
+      @include border-radius(50%);
+    }
+    .hour{
+      display: inline-block;
+      @include padding(0.1rem 0 0 0.2rem);
+    }
+    .qiu{
+      .dian{
+        display: inline-block;
+        @include rect(0.04rem,0.04rem);
+        @include background-color(#999);
+        @include border-radius(50%);
+        vertical-align: middle;
+        @include margin(0 0.1rem 0 0.1rem);
+      }
+      margin-right: 0.15rem;
+      float: right;
+      margin-top: 0.13rem;
+    }
+  }
+  .cont{
+    img{
+      @include rect(100%,100%);
+    }
+      p{
+        @include font-size(0.17rem);
+        @include line-height(0.35rem);
+        @include margin(0.1rem 0.1rem 0 0.1rem);
+        img{
+          @include rect(100%,100%);
+        }
+      }
+    }
+  .hot{
+    margin-top: 0.25rem;
+    .te{
+      @include rect(0.1rem,0.04rem);
+      background-color: #f85959;
+      margin-right: 0.07rem;
+
+    }
+    h3{
+      display: inline-block;
+      @include font-size(0.15rem);
+      @include color(#000);
+    }
+  }
+  .gu{
+    margin-bottom: 0.2rem;
+    h3{
+      @include font-size(0.2rem);
+      margin-left: 0.1rem;
+      margin-top: 0.1rem;
+    }
+    img{
+      @include flexbox();
+      display: inline-block;
+      @include rect(1.1rem,1rem);
+      @include margin(0 0 0 0.1rem);
+
+    }
+  }
+
+}

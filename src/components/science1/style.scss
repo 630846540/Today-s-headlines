@@ -1,0 +1,26 @@
+@import '@/qunar/reset.scss';
+
+.science1{
+  display: inline-block;
+  @include flexbox();
+  @include padding(0.2rem 0 0.05rem 0);
+  .spp{
+    @include padding(0.1rem 0 0 0);
+    h3{
+      @include flexbox();
+      @include align-items();
+      @include rect(91%,auto);
+
+    }
+    span{
+      @include font-size(0.12rem);
+      @include color(#999);
+      @include margin(0 0.03rem 0.3rem 0);
+    }
+  }
+  img{
+    @include rect(36%,0.8rem);
+  }
+  border-bottom : 1px solid rgba(0,0,0,0.1);
+
+}

@@ -1,0 +1,19 @@
+@import '@/qunar/reset.scss';
+
+.international0{
+  display: inline-block;
+  width: 100%;
+  @include padding(0.1rem 0 0.3rem 0);
+  h3{
+    @include font-size(0.17rem);
+    @include color(#222);
+    @include font-weight(normal);
+  }
+  span{
+    display: inline-block;
+    @include font-size(0.15rem);
+    @include color(#999);
+    @include margin(0.1rem 0.03rem 0 0);
+  }
+  border-bottom : 1px solid rgba(0,0,0,0.1);
+}

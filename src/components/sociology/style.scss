@@ -1,0 +1,19 @@
+@import '@/qunar/reset.scss';
+
+.list{
+  @include padding(0 0.1rem 0 0.1rem);
+  h3{
+    @include font-size(0.17rem);
+    @include color(#222);
+    @include font-weight(normal);
+  }
+  ul{
+    @include flexbox();
+    li{
+      img{
+        @include rect(1.1rem,1rem);
+      }
+    }
+  }
+
+}

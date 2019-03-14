@@ -1,0 +1,118 @@
+@import '@/qunar/reset.scss';
+.zong {
+  @include rect(100%,100%);
+  .txt {
+    overflow: hidden;
+    position: fixed;
+    z-index: 99;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 0.54rem;
+    background: #f4f4f4;
+    .tet {
+      float: left;
+      @include padding(0.07rem 0 0 0.1rem);
+
+      .tett {
+        @include rect(3rem, 0.4rem);
+        border: 1px solid #b9b9b9;
+      }
+    }
+
+    .ttt {
+      float: left;
+      border: 1px solid #b9b9b9;
+      background: #efefef;
+      @include rect(0.5rem, 0.4rem);
+      margin-top: 0.07rem;
+
+      span {
+        display: inline-block;
+        @include rect(0.5rem, 0.4rem);
+        margin-top: 0.1rem;
+        margin-left: 0.1rem;
+      }
+    }
+  }
+  .xing{
+    @include rect(100%,100%);
+    .qiu{
+      @include rect(100%,2.5rem);
+      background: url(//s3.pstatp.com/toutiao/resource/website_search/images/lost.f53b66f6.png) no-repeat center 100px;
+      background-size: 2.4rem;
+      margin-top: 0.5rem;
+    }
+    p{
+      margin-left: 1.2rem;
+      @include color(#999);
+    }
+
+  }
+  .biao{
+    @include margin(0.7rem 0.1rem 0.3rem 0.1rem);
+    @include font-size(0.18rem);
+    @include line-height(0.5rem);
+    h3{
+      @include font-size(0.17rem);
+      @include color(#222);
+      @include font-weight(normal);
+    }
+    span{
+      display: inline-block;
+      @include font-size(0.15rem);
+      @include color(#999);
+      @include margin(0.1rem 0.03rem 0 0);
+    }
+    ul{
+      @include flexbox();
+      li{
+        img{
+          @include rect(1.14rem,1rem);
+          @include margin(0 0.08rem 0.3rem 0);
+        }
+      }
+    }
+    .spp{
+      @include padding(0.1rem 0 0 0);
+      h3{
+      @include rect(60%,100%);
+        float: left;
+        @include font-size(0.16rem);
+        @include line-height(0.3rem);
+
+      }
+
+      img{
+          @include rect(36%,0.8rem);
+        float: right;
+        }
+    }
+
+
+  }
+    .video {
+      @include rect(100%, auto);
+      position: relative;
+      h3 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        @include color(#fff);
+        margin-top: 0.1rem;
+        margin-left: 0.2rem;
+      }
+
+      img {
+        @include rect(95%, 2rem);
+        @include margin(0.1rem 0.2rem 0 0.1rem);
+      }
+
+      span {
+        @include font-size(0.1rem);
+        @include color(#999);
+        margin-left: 0.1rem;
+      }
+    }
+}

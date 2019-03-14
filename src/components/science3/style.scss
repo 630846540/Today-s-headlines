@@ -1,0 +1,22 @@
+@import '@/qunar/reset.scss';
+
+.science3{
+  display: inline-block;
+  @include padding(0.1rem 0 0.1rem 0);
+  h3{
+    @include font-size(0.17rem);
+    @include color(#222);
+    @include font-weight(normal);
+  }
+  ul{
+    @include flexbox();
+    li{
+      img{
+        @include rect(1.14rem,1rem);
+        @include margin(0 0.08rem 0.3rem 0);
+      }
+    }
+  }
+  border-bottom : 1px solid rgba(0,0,0,0.1);
+
+}

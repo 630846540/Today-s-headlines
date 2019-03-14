@@ -1,0 +1,149 @@
+@import '@/qunar/reset.scss';
+
+.main {
+  .view {
+    position: relative;
+
+    video {
+      @include rect(100%, 2.2rem);
+    }
+    .imgsss {
+      @include rect(0.5rem, 0.5rem);
+      display: block;
+      position: absolute;
+      top: 0.9rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+    }
+
+    .video-header {
+      padding-left: 0.1rem;
+
+      .video-info {
+        .info-title {
+          position: relative;
+
+          h1 {
+            @include font-size(0.19rem);
+            padding-right: 0.3rem;
+            padding-top: 0.06rem;
+            line-height: 0.25rem;
+            @include overflow();
+          }
+
+          .te {
+            display: inline-block;
+            @include rect(0.2rem, 0.2rem);
+            position: absolute;
+            right: 0.1rem;
+            top: 0.1rem;
+            transform: rotate(180deg)
+          }
+        }
+
+        .info-detail {
+          .dance {
+            @include font-size(0.17rem);
+            margin-top: 0.1rem;
+            margin-bottom: 0.05rem;
+          }
+
+          .sp {
+            @include color(#999);
+          }
+        }
+      }
+
+      .video-author {
+        @include rect(95%, 0.6rem);
+        @include background-color(#f4f5f6);
+        margin-top: 0.1rem;
+
+        .imgg {
+          display: inline-block;
+          @include rect(0.4rem, 0.4rem);
+          @include border-radius(50%);
+          @include margin(0 0.1rem 0 0.1rem);
+        }
+
+        .sa {
+          @include margin(0.1rem 0.4rem 0 0.1rem);
+          line-height: 0.6rem;
+        }
+
+        .sn {
+          display: inline-block;
+          @include rect(0.64rem, 0.24rem);
+          @include color(#ef2d2d);
+          border: 1px solid #ef2d2d;
+          @include border-radius(0.24rem);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  .hhh {
+    h3 {
+      @include font-size(0.16rem);
+      @include margin(0.1rem 0 0.1rem 0.1rem);
+    }
+  }
+
+  .tt {
+    width: 100%;
+    @include flexbox();
+    @include flex-wrap(wrap);
+    .list-content {
+      position: relative;
+      width: 50%;
+      img {
+        @include rect(95%, 1rem);
+        padding-left: 0.1rem;
+      }
+
+      h5 {
+        position: absolute;
+        top: 0.7rem;
+        left: 0.2rem;
+        @include color(#fff);
+        font-weight: bold;
+      }
+
+      p {
+        @include rect(95%, auto);
+        @include font-size(0.18rem);
+        margin-left: 0.1rem;
+      }
+    }
+  }
+  .fat{
+    position: relative;
+    h1{
+      @include font-size(0.19rem);
+      padding-right: 0.3rem;
+      padding-top: 0.06rem;
+      padding-left: 0.1rem;
+      line-height: 0.25rem;
+      @include overflow();
+      overflow:hidden;
+      text-overflow:ellipsis;
+
+      white-space:nowrap;
+
+    }
+    .tee{
+      display: inline-block;
+      @include rect(0.2rem, 0.2rem);
+      position: absolute;
+      right: 0.1rem;
+      top: 0.1rem;
+    }
+    }
+  h4{
+    @include font-size(0.2rem);
+    @include margin(0.2rem 0 0.1rem 0.1rem);
+  }
+
+}

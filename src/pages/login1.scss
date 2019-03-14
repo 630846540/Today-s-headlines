@@ -1,0 +1,52 @@
+@import '@/qunar/reset.scss';
+
+.content {
+  .am-input-label-5{
+    width: 10% !important;
+  }
+  .am-list-item.am-input-item{
+    width: 80%;
+    @include margin(0.2rem 0 0.1rem 0.45rem)
+  }
+  input {
+    font-size: 14px;
+    line-height: 18px;
+    height: 18px;
+    border-color: #cbcbcb;
+    padding: 11px 8px 11px 50px;
+    box-sizing: content-box;
+    border: 1px solid #ddd;
+  }
+
+
+  p {
+    margin-left: 2rem;
+
+    span {
+      @include color(#f85959)
+    }
+  }
+
+  Button {
+    width: 280px;
+    height: 42px;
+    line-height: 42px;
+    background-color: #f85959;
+    border: none;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 3px;
+    outline: none;
+    box-shadow: none;
+    transition: box-shadow 0.5s;
+  }
+
+  .btn {
+    margin-left: 0.5rem;
+  }
+
+
+}
